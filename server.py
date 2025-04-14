@@ -21,7 +21,7 @@ async def generate_response(request: Request):
     if not question:
         return {"answer": "질문이 비어 있습니다."}
 
-    # test.py의 Gemma2 모델 호출
+
     answer = generate_answer(question)
     return {"answer": answer}
 
